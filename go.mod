@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/cosmos/cosmos-sdk v0.45.12
-	github.com/forbole/juno/v4 v4.1.0
+	github.com/forbole/juno/v4 v4.2.1-0.20230704033814-2aa8d968649e
 	github.com/go-co-op/gocron v1.28.2
 	github.com/gogo/protobuf v1.3.3
 	github.com/jmoiron/sqlx v1.3.5
@@ -38,7 +38,7 @@ require (
 	github.com/cosmos/go-bip39 v1.0.0 // indirect
 	github.com/cosmos/gorocksdb v1.2.0 // indirect
 	github.com/cosmos/iavl v0.19.4 // indirect
-	github.com/cosmos/ibc-go/v3 v3.4.0 // indirect
+	github.com/cosmos/ibc-go/v4 v4.3.0 // indirect
 	github.com/cosmos/ledger-cosmos-go v0.12.2 // indirect
 	github.com/creachadair/taskgroup v0.3.2 // indirect
 	github.com/danieljoos/wincred v1.1.2 // indirect
@@ -114,9 +114,9 @@ require (
 	github.com/tidwall/btree v1.5.0 // indirect
 	github.com/zondax/hid v0.9.1 // indirect
 	github.com/zondax/ledger-go v0.14.1 // indirect
-	go.etcd.io/bbolt v1.3.6 // indirect
+	go.etcd.io/bbolt v1.3.7 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
-	golang.org/x/crypto v0.2.0 // indirect
+	golang.org/x/crypto v0.5.0 // indirect
 	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
@@ -136,5 +136,3 @@ replace (
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.24
 
 )
-
-exclude github.com/cosmos/ibc-go/v3 v3.2.0

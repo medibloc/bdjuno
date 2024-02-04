@@ -16,8 +16,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/forbole/bdjuno/v4/database"
 	"github.com/forbole/bdjuno/v4/modules"
-	"github.com/medibloc/panacea-core/v2/x/aol"
-	"github.com/medibloc/panacea-core/v2/x/did"
+	panacea "github.com/medibloc/panacea-core/v2/app"
 )
 
 func main() {
@@ -57,10 +56,7 @@ func main() {
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
 		simapp.ModuleBasics,
-		module.NewBasicManager(
-			aol.AppModuleBasic{},
-			did.AppModuleBasic{},
-		),
+		panacea.ModuleBasics,
 	}
 }
 
