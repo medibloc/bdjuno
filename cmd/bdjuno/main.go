@@ -13,10 +13,9 @@ import (
 
 	"github.com/forbole/bdjuno/v4/types/config"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/forbole/bdjuno/v4/database"
 	"github.com/forbole/bdjuno/v4/modules"
-	panacea "github.com/medibloc/panacea-core/v2/app"
+	"github.com/medibloc/panacea-core/v2/app"
 )
 
 func main() {
@@ -55,8 +54,7 @@ func main() {
 // This should be edited by custom implementations if needed.
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
-		simapp.ModuleBasics,
-		panacea.ModuleBasics,
+		app.ModuleBasics,
 	}
 }
 
